@@ -1516,7 +1516,8 @@ MKS Robin EEPROM:
 EEPROM_SD
 EEPROM_W25Q
 */
-#define EEPROM_W25Q
+//#define EEPROM_W25Q
+#define EEPROM_SD
 
 #if ENABLED(EEPROM_W25Q)
 #undef SDCARD_EEPROM_EMULATION
@@ -2299,8 +2300,8 @@ EEPROM_W25Q
  *   root of your SD card, together with the compiled firmware.
  */
 //#define TFT_CLASSIC_UI
-#define TFT_COLOR_UI
-//#define TFT_LVGL_UI
+//#define TFT_COLOR_UI
+#define TFT_LVGL_UI
 
 /**
  * TFT Rotation. Set to one of the following values:
@@ -2324,7 +2325,7 @@ EEPROM_W25Q
 //
 // ADS7843/XPT2046 ADC Touchscreen such as ILI9341 2.8
 //
-#define TOUCH_SCREEN
+//#define TOUCH_SCREEN
 #if ENABLED(TOUCH_SCREEN)
   #define BUTTON_DELAY_EDIT  50 // (ms) Button repeat delay for edit screens
   #define BUTTON_DELAY_MENU 250 // (ms) Button repeat delay for menus
